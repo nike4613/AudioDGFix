@@ -8,6 +8,6 @@ If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 }
 
 # Create the service 
-$svc = New-Service -Name "AudioDGFix" -BinaryPathName "$(resolve-path .\AudioDGFix.exe) -s" -DependsOn "audiosrv" -StartupType AutomaticDelayedStart
+$svc = New-Service -Name "AudioDGFix" -BinaryPathName "$(resolve-path .\AudioDGFix.exe) -s" -DependsOn "audiosrv" -StartupType Automatic
 # Immediately start the Service
 Start-Service $svc
