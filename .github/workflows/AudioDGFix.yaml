@@ -44,7 +44,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Publish
-      run: dotnet publish --configuration Release --no-restore --no-build -p:SelfContained=true -p:PublishSingleFile=true -p:PublishReadyToRun=true
+      run: dotnet publish --configuration Release --no-restore --no-build -p:SelfContained=true -p:PublishSingleFile=true -p:PublishReadyToRun=true -p:RuntimeIdentifier=win-x64
 
     - name: Upload
       uses: actions/upload-artifact@v2
