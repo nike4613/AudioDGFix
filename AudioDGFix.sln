@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.218
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioDGFix", "AudioDGFix\AudioDGFix.csproj", "{5151359A-9A74-42BB-88A6-A72128E98C9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5151359A-9A74-42BB-88A6-A72128E98C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5151359A-9A74-42BB-88A6-A72128E98C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5151359A-9A74-42BB-88A6-A72128E98C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5151359A-9A74-42BB-88A6-A72128E98C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1588EF5D-0D92-475D-9474-6B6F6EB7AE9D}
+	EndGlobalSection
+EndGlobal
