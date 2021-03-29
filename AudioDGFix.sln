@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioDGFix", "AudioDGFix\Au
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A779220-A61A-410C-8F9F-C421FF7A7614}"
 	ProjectSection(SolutionItems) = preProject
+		.github\workflows\AudioDGFix.yaml = .github\workflows\AudioDGFix.yaml
 		install-service.ps1 = install-service.ps1
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
