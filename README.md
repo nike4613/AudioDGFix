@@ -10,5 +10,5 @@ Either run the executable directly each time you start your computer, or run
 & .\install-service.ps1
 ```
 
-in the publish output in Powershell Core to install it as a service. `.\uninstall-service.ps1` can
-be used to stop and remove the service.
+in the publish output in Powershell to install it as a service. `.\uninstall-service.ps1` can
+be used to stop and remove the service, but it must be run from Powershell Core.
