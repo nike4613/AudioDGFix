@@ -8,5 +8,6 @@ If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
   exit
 }
 
-# Remove the service 
+# Remove the service
+Stop-Service -Name "AudioDGFix"
 Remove-Service -Name "AudioDGFix"
