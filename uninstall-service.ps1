@@ -1,17 +1,12 @@
-if ($PSEdition -neq "Core") {
-    Write-Host "This script requires PowerShell Core. Get it here: https://github.com/powershell/powershell#get-powershell"
-    $HOST.UI.RawUI.ReadKey(“NoEcho,IncludeKeyDown”) | OUT-NULL
-    $HOST.UI.RawUI.Flushinputbuffer()
-}
 
 # Ensure that  the script is elevated
 If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))
 {
   # Relaunch as an elevated process:
-  Start-Process pwsh "-File",('"{0}"' -f $MyInvocation.MyCommand.Path) -Verb RunAs
+  Start-Process powershell "-File",('"{0}"' -f $MyInvocation.MyCommand.Path) -Verb RunAs
   exit
 }
 
 # Remove the service
-Stop-Service -Name "AudioDGFix"
-Remove-Service -Name "AudioDGFix"
+sc.exe stop "AudioDGFix"
+sc.exe delete "AudioDGFix"
