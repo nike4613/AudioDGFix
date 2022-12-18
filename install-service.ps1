@@ -9,6 +9,6 @@ If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 Set-Location -LiteralPath $PSScriptRoot
 
 # Create the service 
-sc.exe create "AudioDGFix" type= own start= delayed-auto binpath= "`"$(resolve-path .\AudioDGFix.exe)`" -s" depend= "audiosrv"
+sc.exe create "AudioDGFix" type= own start= auto binpath= "`"$(resolve-path .\AudioDGFix.exe)`" -s" depend= "audiosrv"
 # Immediately start the Service
 Start-Service -Name "AudioDGFix"
